@@ -1,0 +1,217 @@
+/* style.css - Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fc;
+}
+
+/* Navigation */
+.navbar {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    color: white !important;
+}
+
+.navbar-nav > li > a:hover {
+    background: rgba(255,255,255,0.1) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeInDown 1s;
+}
+
+.hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    animation: fadeInUp 1s;
+}
+
+/* Stats Section */
+.stats-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background: white;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.stat-icon {
+    font-size: 48px;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.stat-label {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Features Section */
+.features-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: #667eea;
+    margin-bottom: 20px;
+}
+
+.feature-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #667eea;
+    background: white;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-decoration: none;
+    color: #667eea;
+}
+
+.btn-custom {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s;
+}
+
+.btn-custom:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* Forms */
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    height: 45px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: none;
+}
+
+/* Tables */
+.table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table thead tr {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 8px;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title { font-size: 32px; }
+    .hero-subtitle { font-size: 16px; }
+    .stat-card { margin-bottom: 20px; }
+}
